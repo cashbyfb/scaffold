@@ -1,0 +1,94 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.perye.config.FeignOkHttpConfig",
+      "name": "perye.feign-ok-http-config",
+      "type": "com.perye.config.FeignOkHttpConfig"
+    },
+    {
+      "sourceType": "com.perye.config.TransactionalConfig",
+      "name": "perye.transactional",
+      "type": "com.perye.config.TransactionalConfig"
+    },
+    {
+      "sourceType": "com.perye.config.WebSocketConfig",
+      "name": "perye.web-socket",
+      "type": "com.perye.config.WebSocketConfig"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.perye.config.FeignOkHttpConfig",
+      "defaultValue": 60,
+      "name": "perye.feign-ok-http-config.connect-timeout",
+      "description": "连接超时时间,值0表示没有超时,单位秒",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.perye.config.FeignOkHttpConfig",
+      "defaultValue": 60,
+      "name": "perye.feign-ok-http-config.read-timeout",
+      "description": "设置新连接的默认读取超时,值0表示没有超时,单位秒",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.perye.config.FeignOkHttpConfig",
+      "defaultValue": 180,
+      "name": "perye.feign-ok-http-config.write-timeout",
+      "description": "设置新连接的默认写入超时,值0表示没有超时,单位秒",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.perye.config.TransactionalConfig",
+      "defaultValue": [],
+      "name": "perye.transactional.customize-read-only-method-rule-transaction-attributes",
+      "description": "自定义方法名的事务属性相关联,可以使用通配符(*)字符关联相同的事务属性的设置方法; 只读事务",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.perye.config.TransactionalConfig",
+      "defaultValue": [],
+      "name": "perye.transactional.customize-required-method-rule-transaction-attributes",
+      "description": "自定义方法名的事务属性相关联,可以使用通配符(*)字符关联相同的事务属性的设置方法; 传播事务(默认的){@link org.springframework.transaction.annotation.Propagation#REQUIRED}",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.perye.config.TransactionalConfig",
+      "defaultValue": [],
+      "name": "perye.transactional.customize-transaction-bean-names",
+      "description": "自定义事务 BeanName 拦截",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.perye.config.WebSocketConfig",
+      "name": "perye.web-socket.channel-interceptor",
+      "description": "WebSocket拦截器",
+      "type": "org.springframework.messaging.support.ChannelInterceptor"
+    },
+    {
+      "sourceType": "com.perye.config.WebSocketConfig",
+      "defaultValue": [
+        "\/topic"
+      ],
+      "name": "perye.web-socket.client-broker-destination-prefixes",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.perye.config.WebSocketConfig",
+      "defaultValue": [
+        "\/app"
+      ],
+      "name": "perye.web-socket.server-application-destination-prefixes",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.perye.config.WebSocketConfig",
+      "defaultValue": [
+        "\/perye"
+      ],
+      "name": "perye.web-socket.stomp-endpoints-paths",
+      "type": "java.lang.String[]"
+    }
+  ]
+}

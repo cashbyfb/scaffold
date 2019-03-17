@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="perye-admin-ui" />
+        <module name="perye-basic-config" />
+        <module name="perye-cache" />
+        <module name="perye-common" />
+        <module name="perye-generator" />
+        <module name="perye-manage-system-bean" />
+        <module name="perye-manage-system-dao" />
+        <module name="perye-manage-system-service" />
+        <module name="perye-manage-system-webapp" />
+        <module name="perye-scheduling" />
+        <module name="perye-security" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="perye" target="1.8" />
+      <module name="perye-admin-ui" target="1.8" />
+      <module name="perye-basic-config" target="1.8" />
+      <module name="perye-cache" target="1.8" />
+      <module name="perye-common" target="1.8" />
+      <module name="perye-generator" target="1.8" />
+      <module name="perye-manage-system" target="1.8" />
+      <module name="perye-manage-system-bean" target="1.8" />
+      <module name="perye-manage-system-dao" target="1.8" />
+      <module name="perye-manage-system-service" target="1.8" />
+      <module name="perye-manage-system-webapp" target="1.8" />
+      <module name="perye-parent" target="1.8" />
+      <module name="perye-scheduling" target="1.8" />
+      <module name="perye-security" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
